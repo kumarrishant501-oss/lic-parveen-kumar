@@ -44,7 +44,6 @@
             line-height: 1.2;
         }
         
-        /* Navigation */
         .navbar {
             position: fixed;
             top: 0;
@@ -97,7 +96,6 @@
             cursor: pointer;
         }
         
-        /* Hero Section */
         .hero {
             background: var(--gradient-dark);
             padding: 150px 2rem 100px;
@@ -186,7 +184,6 @@
             color: var(--primary-dark);
         }
         
-        /* Section Styles */
         section {
             padding: 80px 2rem;
         }
@@ -222,7 +219,6 @@
             margin: 0 auto;
         }
         
-        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -250,6 +246,7 @@
             width: 100%;
             border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            object-fit: cover;
         }
         
         .about-text h3 {
@@ -289,7 +286,6 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -336,414 +332,34 @@
             color: var(--text-gray);
             line-height: 1.8;
         }
-        
-        /* Process Steps */
-        .process-steps {
+
+        /* LIC Plans Gallery */
+        .plans-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-        
-        .step {
-            position: relative;
-            padding: 2rem;
+
+        .plan-image-card {
             background: var(--white);
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-        
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: var(--gradient-gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--white);
-        }
-        
-        .step h4 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-dark);
-        }
-        
-        .step p {
-            color: var(--text-gray);
-            font-size: 0.95rem;
-        }
-        
-        /* Documents Section */
-        .documents-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .document-category {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 15px;
-            border-left: 4px solid var(--primary-gold);
-        }
-        
-        .document-category h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-dark);
-        }
-        
-        .document-category ul {
-            list-style: none;
-        }
-        
-        .document-category li {
-            padding: 0.8rem 0;
-            border-bottom: 1px solid #e0e0e0;
-            color: var(--text-gray);
-            display: flex;
-            align-items: center;
-        }
-        
-        .document-category li:last-child {
-            border-bottom: none;
-        }
-        
-        .document-category li i {
-            color: var(--primary-gold);
-            margin-right: 0.8rem;
-        }
-        
-        /* Why Choose Us */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        
-        .feature-card {
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient-dark);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-        }
-        
-        .feature-icon i {
-            font-size: 2rem;
-            color: var(--primary-gold);
-        }
-        
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--primary-dark);
-        }
-        
-        .feature-card p {
-            color: var(--text-gray);
-        }
-        
-        /* Testimonials */
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .testimonial-card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
-            position: relative;
-        }
-        
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 1rem;
-            left: 1.5rem;
-            font-size: 5rem;
-            color: var(--primary-gold);
-            opacity: 0.2;
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            color: var(--text-gray);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            background: var(--gradient-gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-        
-        .author-info h4 {
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-        }
-        
-        .author-info p {
-            font-size: 0.9rem;
-            color: var(--text-gray);
-        }
-        
-        .rating {
-            color: var(--primary-gold);
-            margin-top: 0.5rem;
-        }
-        
-        /* FAQ Section */
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            background: var(--white);
-            margin-bottom: 1rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             overflow: hidden;
-        }
-        
-        .faq-question {
-            padding: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            color: var(--primary-dark);
-            transition: background 0.3s;
-        }
-        
-        .faq-question:hover {
-            background: #f8f9fa;
-        }
-        
-        .faq-question i {
-            color: var(--primary-gold);
-            transition: transform 0.3s;
-        }
-        
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-        
-        .faq-answer-content {
-            padding: 0 1.5rem 1.5rem;
-            color: var(--text-gray);
-            line-height: 1.8;
-        }
-        
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-        
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-        
-        /* Contact Section */
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-        }
-        
-        .contact-info {
-            background: var(--gradient-dark);
-            padding: 3rem;
-            border-radius: 15px;
-            color: var(--text-light);
-        }
-        
-        .contact-info h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-gold);
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(201, 169, 97, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .contact-icon i {
-            color: var(--primary-gold);
-            font-size: 1.2rem;
-        }
-        
-        .contact-details h4 {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-gold);
-        }
-        
-        .contact-details p, .contact-details a {
-            color: var(--text-light);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-        
-        .contact-details a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .contact-form {
-            background: var(--white);
-            padding: 3rem;
-            border-radius: 15px;
             box-shadow: 0 5px 30px rgba(0,0,0,0.08);
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: var(--primary-dark);
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-family: 'Inter', sans-serif;
-            transition: border-color 0.3s;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary-gold);
-        }
-        
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        
-        /* Footer */
-        footer {
-            background: var(--gradient-dark);
-            color: var(--text-light);
-            padding: 3rem 2rem 1.5rem;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 2rem;
-        }
-        
-        .footer-section h3 {
-            color: var(--primary-gold);
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-        }
-        
-        .footer-section p,
-        .footer-section a {
-            color: var(--text-light);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.8rem;
-            opacity: 0.9;
-        }
-        
-        .footer-section a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            background: rgba(201, 169, 97, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             transition: all 0.3s;
         }
-        
-        .social-links a:hover {
-            background: var(--primary-gold);
-            transform: translateY(-3px);
+
+        .plan-image-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .plan-image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
         
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: var(--text-light);
-            opacity: 0.8;
-        }
-        
-        /* WhatsApp Float Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -792,7 +408,6 @@
             }
         }
         
-        /* Responsive Design */
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
@@ -822,8 +437,7 @@
                 font-size: 1.1rem;
             }
             
-            .about-content,
-            .contact-container {
+            .about-content {
                 grid-template-columns: 1fr;
             }
             
@@ -843,19 +457,16 @@
             }
         }
         
-        /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
         }
         
-        /* Background Pattern */
         .bg-pattern {
             background-color: #f8f9fa;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Parveen Kumar</div>
@@ -863,9 +474,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#plans">LIC Plans</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-toggle" id="mobileToggle">
@@ -874,22 +483,22 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Secure Your Family's Future</h1>
             <p class="subtitle">Professional LIC Insurance Advisory Services</p>
             <p>Expert guidance on Life Insurance, Term Plans, Health Coverage, and Retirement Solutions backed by the Government of India's most trusted institution.</p>
             <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get Policy Advice</a>
-                <a href="tel:+919990345020" class="btn btn-secondary">
+                <a href="tel:+919990345020" class="btn btn-primary">
                     <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/919990345020?text=Hello%20Mr.%20Parveen%20Kumar%2C%20I%20visited%20your%20LIC%20website%20and%20would%20like%20guidance%20on%20insurance%20plans." class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="section-header">
@@ -899,7 +508,7 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop" alt="Professional Financial Advisor">
+                    <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/f26d4bce-904b-4c3c-b730-e05735826a9d/2025-12-23T17-21-39-550Z-a5b86439-chat-image-1766510499529-0.jpg" alt="Parveen Kumar - Professional LIC Agent">
                 </div>
                 <div class="about-text">
                     <h3>Dedicated to Your Financial Security</h3>
@@ -923,7 +532,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="bg-pattern">
         <div class="container">
             <div class="section-header">
@@ -967,317 +575,31 @@
                     <h3>Retirement & Pension Plans</h3>
                     <p>Plan for a comfortable retirement with guaranteed pension plans. Ensure financial independence and dignity in your golden years.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Investment Plans</h3>
-                    <p>Wealth creation through systematic savings and investment. LIC plans that offer insurance protection along with attractive returns.</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section id="process">
+    <section id="plans">
         <div class="container">
             <div class="section-header">
-                <h2>How the LIC Process Works</h2>
+                <h2>Featured LIC Plans & Benefits</h2>
                 <div class="divider"></div>
-                <p>A transparent, step-by-step journey to your financial security</p>
+                <p>Explore our comprehensive insurance solutions designed for your family's security</p>
             </div>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h4>Initial Consultation</h4>
-                    <p>Contact us via phone, WhatsApp, or email to discuss your insurance needs and financial goals.</p>
+            <div class="plans-gallery">
+                <div class="plan-image-card">
+                    <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/f26d4bce-904b-4c3c-b730-e05735826a9d/2025-12-23T17-21-39-675Z-9c7425ac-chat-image-1766510499654-1.jpg" alt="LIC Family Protection Plans">
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h4>Requirement Analysis</h4>
-                    <p>Detailed assessment of your personal situation, family needs, and financial objectives.</p>
+                <div class="plan-image-card">
+                    <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/f26d4bce-904b-4c3c-b730-e05735826a9d/2025-12-23T17-21-39-807Z-37e16aae-chat-image-1766510499788-2.jpg" alt="LIC Protection Plus Plan 886">
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h4>Plan Recommendation</h4>
-                    <p>Customized LIC plan suggestions tailored to your specific requirements and budget.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h4>Document Collection</h4>
-                    <p>Guidance on required documents and assistance in preparing your application.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <h4>Application Submission</h4>
-                    <p>Complete application processing and submission to LIC with all necessary documentation.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">6</div>
-                    <h4>Medical Check-up</h4>
-                    <p>Coordination of medical examination if required by the policy terms.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">7</div>
-                    <h4>Policy Approval</h4>
-                    <p>LIC reviews and approves your application based on underwriting guidelines.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">8</div>
-                    <h4>Policy Issuance</h4>
-                    <p>Receive your policy document with complete terms, conditions, and coverage details.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">9</div>
-                    <h4>Ongoing Support</h4>
-                    <p>Continuous assistance for premium payments, policy servicing, and claims support.</p>
+                <div class="plan-image-card">
+                    <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/f26d4bce-904b-4c3c-b730-e05735826a9d/2025-12-23T17-21-39-913Z-602cf992-chat-image-1766510499895-3.jpg" alt="LIC Jeevan Umang ATM Concept">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Documents Section -->
-    <section id="documents" class="bg-pattern">
-        <div class="container">
-            <div class="section-header">
-                <h2>Required Documents</h2>
-                <div class="divider"></div>
-                <p>Essential documentation for your LIC policy application</p>
-            </div>
-            <div class="documents-grid">
-                <div class="document-category">
-                    <h3>Identity Proof</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Aadhaar Card</li>
-                        <li><i class="fas fa-check-circle"></i> PAN Card</li>
-                        <li><i class="fas fa-check-circle"></i> Passport</li>
-                        <li><i class="fas fa-check-circle"></i> Voter ID Card</li>
-                        <li><i class="fas fa-check-circle"></i> Driving License</li>
-                    </ul>
-                </div>
-                <div class="document-category">
-                    <h3>Address Proof</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Aadhaar Card</li>
-                        <li><i class="fas fa-check-circle"></i> Utility Bills (Recent)</li>
-                        <li><i class="fas fa-check-circle"></i> Passport</li>
-                        <li><i class="fas fa-check-circle"></i> Bank Statement</li>
-                        <li><i class="fas fa-check-circle"></i> Rent Agreement</li>
-                    </ul>
-                </div>
-                <div class="document-category">
-                    <h3>Additional Documents</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Recent Passport Photos</li>
-                        <li><i class="fas fa-check-circle"></i> Income Proof (Salary Slip/ITR)</li>
-                        <li><i class="fas fa-check-circle"></i> Age Proof (Birth Certificate)</li>
-                        <li><i class="fas fa-check-circle"></i> Bank Account Details</li>
-                        <li><i class="fas fa-check-circle"></i> Medical Reports (if applicable)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section id="why-choose">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Our LIC Services</h2>
-                <div class="divider"></div>
-                <p>Trusted expertise backed by India's most reliable insurance institution</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-landmark"></i>
-                    </div>
-                    <h3>Government Backed</h3>
-                    <p>LIC is a Government of India enterprise with 100% claim settlement record and unmatched trust.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Expert Guidance</h3>
-                    <p>Professional advisory services with personalized attention to your unique financial needs.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Transparent Process</h3>
-                    <p>Clear communication, honest recommendations, and complete transparency in all dealings.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>Lifetime Support</h3>
-                    <p>Continuous assistance from policy purchase through claims settlement and beyond.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-contract"></i>
-                    </div>
-                    <h3>Customized Plans</h3>
-                    <p>Tailored insurance solutions designed specifically for your family's requirements.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Quick Processing</h3>
-                    <p>Efficient application processing and prompt policy issuance with minimal documentation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="bg-pattern">
-        <div class="container">
-            <div class="section-header">
-                <h2>Client Testimonials</h2>
-                <div class="divider"></div>
-                <p>What our satisfied clients say about our services</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">Parveen Kumar provided excellent guidance in choosing the right LIC policy for my family. His professional approach and clear explanations made the entire process smooth and hassle-free.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">RS</div>
-                        <div class="author-info">
-                            <h4>Rajesh Sharma</h4>
-                            <p>Business Owner, Delhi</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">I was confused about retirement planning until I met Parveen. He analyzed my needs thoroughly and recommended a perfect pension plan. Very satisfied with his service and expertise.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">PG</div>
-                        <div class="author-info">
-                            <h4>Priya Gupta</h4>
-                            <p>IT Professional, Gurgaon</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">Highly professional and trustworthy advisor. Parveen helped me secure my children's future with the right education and marriage plans. I recommend his services to everyone.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">AK</div>
-                        <div class="author-info">
-                            <h4>Amit Kumar</h4>
-                            <p>Government Employee, Noida</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-                <div class="divider"></div>
-                <p>Common questions about LIC insurance and our services</p>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What is LIC and why should I choose it?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Life Insurance Corporation of India (LIC) is a Government of India enterprise and the largest insurance company in India. With over 65 years of trust, 100% claim settlement record, and government backing, LIC offers unmatched security and reliability for your insurance needs.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How do I choose the right insurance plan?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Choosing the right plan depends on your age, income, family responsibilities, and financial goals. As your advisor, I conduct a detailed needs analysis to recommend plans that perfectly match your requirements and budget. Contact me for a personalized consultation.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What documents are required for policy purchase?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Basic documents include identity proof (Aadhaar/PAN), address proof, age proof, income proof, passport photos, and bank details. For specific plans, additional documents may be required. I provide complete guidance on documentation requirements.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How long does policy approval take?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Policy approval typically takes 7-15 days depending on the plan type and medical requirements. For plans requiring medical examination, it may take slightly longer. I ensure all documentation is complete to expedite the process.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Can I pay premiums online?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Yes, LIC offers multiple convenient payment options including online payment through their website/app, auto-debit, NEFT/RTGS, and traditional methods. I assist you in setting up the most convenient payment method for your policy.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What support do you provide after policy purchase?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            I provide comprehensive lifetime support including premium payment reminders, policy servicing assistance, claim settlement support, policy revival help, and guidance on policy loans or surrenders. Your satisfaction is my priority.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="bg-pattern">
         <div class="container">
             <div class="section-header">
@@ -1285,124 +607,41 @@
                 <div class="divider"></div>
                 <p>Let's discuss your insurance needs and secure your family's future</p>
             </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Financial Advisor</h4>
-                            <p>Parveen Kumar</p>
-                            <p>Licensed LIC Agent</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone Numbers</h4>
-                            <a href="tel:+919990345020">+91 9990345020</a>
-                            <a href="tel:+919899369101">+91 9899369101</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:parveenkumar.128.pk@gmail.com">parveenkumar.128.pk@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <a href="https://wa.me/919990345020?text=Hello%20Mr.%20Parveen%20Kumar%2C%20I%20visited%20your%20LIC%20website%20and%20would%20like%20guidance%20on%20insurance%20plans." target="_blank">Chat on WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message *</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
+            <div style="text-align: center; padding: 3rem; background: var(--gradient-dark); border-radius: 15px; color: white;">
+                <h3 style="color: var(--primary-gold); margin-bottom: 2rem; font-size: 2rem;">Contact Information</h3>
+                <p style="font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600;">Parveen Kumar</p>
+                <p style="margin-bottom: 0.5rem; font-size: 1.1rem;">Licensed LIC Agent & Financial Advisor</p>
+                <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+                    📞 <a href="tel:+919990345020" style="color: white; text-decoration: none; font-weight: 600;">+91 9990345020</a> | 
+                    <a href="tel:+919899369101" style="color: white; text-decoration: none; font-weight: 600;">+91 9899369101</a>
+                </p>
+                <p style="margin-bottom: 2.5rem; font-size: 1.1rem;">
+                    📧 <a href="mailto:parveenkumar.128.pk@gmail.com" style="color: var(--primary-gold); text-decoration: none;">parveenkumar.128.pk@gmail.com</a>
+                </p>
+                <a href="https://wa.me/919990345020?text=Hello%20Mr.%20Parveen%20Kumar%2C%20I%20visited%20your%20LIC%20website%20and%20would%20like%20guidance%20on%20insurance%20plans." class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 3rem;">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Parveen Kumar</h3>
-                <p>Professional Financial Advisor & Licensed LIC Agent dedicated to securing your family's financial future with trusted insurance solutions.</p>
-                <div class="social-links">
-                    <a href="https://wa.me/919990345020" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:parveenkumar.128.pk@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+919990345020"><i class="fas fa-phone"></i></a>
-                </div>
+    <footer style="background: var(--gradient-dark); color: var(--text-light); padding: 3rem 2rem 1.5rem; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h3 style="color: var(--primary-gold); margin-bottom: 1rem; font-size: 1.5rem;">Parveen Kumar</h3>
+            <p style="margin-bottom: 1rem; opacity: 0.9;">Professional Financial Advisor & Licensed LIC Agent</p>
+            <p style="margin-bottom: 2rem; opacity: 0.8; font-size: 0.95rem;">Dedicated to securing your family's financial future with trusted LIC insurance solutions.</p>
+            <div style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.8;">
+                <p>&copy; 2024 Parveen Kumar - Professional Insurance Advisory Services. All Rights Reserved.</p>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">Licensed LIC Agent | Committed to Excellence in Financial Planning</p>
             </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#process">Process</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-section">
-                <h3>Our Services</h3>
-                <a href="#services">Life Insurance</a>
-                <a href="#services">Term Insurance</a>
-                <a href="#services">Health Insurance</a>
-                <a href="#services">Child Plans</a>
-                <a href="#services">Pension Plans</a>
-            </div>
-            <div class="footer-section">
-                <h3>Important Note</h3>
-                <p style="font-size: 0.9rem; line-height: 1.6;">LIC is a Government of India enterprise. All insurance products are subject to terms and conditions. Please read policy documents carefully before purchase.</p>
-                <p style="font-size: 0.85rem; margin-top: 1rem; opacity: 0.8;">Your privacy is important. All information shared is kept confidential and used solely for insurance advisory purposes.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Parveen Kumar - Professional Insurance Advisory Services. All Rights Reserved.</p>
-            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Licensed LIC Agent | Committed to Excellence in Financial Planning</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
     <a href="https://wa.me/919990345020?text=Hello%20Mr.%20Parveen%20Kumar%2C%20I%20visited%20your%20LIC%20website%20and%20would%20like%20guidance%20on%20insurance%20plans." target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
-        // Mobile Menu Toggle
         const mobileToggle = document.getElementById('mobileToggle');
         const navMenu = document.getElementById('navMenu');
         
@@ -1413,7 +652,6 @@
             icon.classList.toggle('fa-times');
         });
         
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -1423,53 +661,6 @@
             });
         });
         
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const isActive = faqItem.classList.contains('active');
-                
-                // Close all FAQ items
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('active');
-                });
-                
-                // Open clicked item if it wasn't active
-                if (!isActive) {
-                    faqItem.classList.add('active');
-                }
-            });
-        });
-        
-        // Contact Form Handling
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Create WhatsApp message
-            const whatsappMessage = `Hello Mr. Parveen Kumar,
-
-I visited your LIC website and would like to discuss insurance plans.
-
-Name: ${name}
-Phone: ${phone}
-${email ? `Email: ${email}` : ''}
-
-Message: ${message}`;
-            
-            const whatsappURL = `https://wa.me/919990345020?text=${encodeURIComponent(whatsappMessage)}`;
-            window.open(whatsappURL, '_blank');
-            
-            // Reset form
-            document.getElementById('contactForm').reset();
-            alert('Thank you! You will be redirected to WhatsApp to send your message.');
-        });
-        
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1482,8 +673,7 @@ Message: ${message}`;
                 }
             });
         });
-        
-        // Navbar background on scroll
+
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
